@@ -15,6 +15,9 @@
   --hero-button-color: #ffffff;
   --hero-button-bg-color: #2196f3;
 
+  --our-work-desc-bg: rgba(47, 48, 58, 0.8);
+  --our-work-desc-color: #ffffff;
+
   --nav-link-color: #212121;
   --contact-link-color: #757575;
   --btn-text-color: #212121;
@@ -352,6 +355,31 @@ body {
 .our-work-item:not(:last-child) {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.our-work-card {
+  position: relative;
+}
+.our-work-desc-wrapper {
+  display: flex;
+  position: absolute;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  background: var(--our-work-desc-bg);
+}
+
+.our-work-desc {
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--our-work-desc-color);
 }
 
 /* TEAM */
