@@ -584,6 +584,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time) var(--function-cubic);
 }
 
 .address-text {
@@ -593,6 +594,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-address-text);
+  transition: color var(--time) var(--function-cubic);
 }
 
 .address-item:last-child {
@@ -664,7 +666,6 @@ body {
 
 .portfolio {
   display: block;
-  /* padding: 94px 0; */
 }
 
 /* FILTER BTN */
@@ -693,11 +694,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--btn-text-color);
-  background: var(--filter-btn-background);
+  background-color: var(--filter-btn-background);
   padding: 6px 22px;
-
-  /* box-shadow: var(--btn-box-shadow); */
   border-radius: var(--btn-border-radius);
+
+  transition: background-color var(--time) var(--function-cubic),
+    color var(--time) var(--function-cubic), box-shadow var(--time) var(--function-cubic);
 }
 
 .filter-btn:hover,
