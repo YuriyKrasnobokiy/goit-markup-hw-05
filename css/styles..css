@@ -157,6 +157,7 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms linear;
 }
 
 .web {
@@ -215,6 +216,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms linear;
 }
 
 .contacts-social-icon {
@@ -266,13 +268,13 @@ body {
   margin: 0 auto;
   background-color: var(--hero-button-bg-color);
   border-radius: var(--btn-border-radius);
-  box-shadow: var(--hero-button-shadow);
+
+  transition: box-shadow 250ms linear;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  /* background-color: var(--accent-color);
-  color: var(--accent-text-color); */
+  box-shadow: var(--hero-button-shadow);
 }
 
 /* features */
@@ -468,6 +470,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--team-social-link-bg-color);
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .team-social-icon {
@@ -526,6 +529,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border 250ms linear, fill 250ms linear;
 }
 
 .clients-list-icon {
