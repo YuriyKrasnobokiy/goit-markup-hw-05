@@ -24,6 +24,8 @@
   --header-border-bottom: #ececec;
 
   --team-bg-color: #f5f4fa;
+  --team-card-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   --team-card-background: #ffffff;
   --team-social-link-bg-color: #ffffff;
 
@@ -449,8 +451,7 @@ body {
   height: 428px;
 
   background: var(--team-card-background);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--team-card-box-shadow);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -818,7 +819,8 @@ body {
   height: 100vh;
 
   background-color: var(--backdrop-background-color);
-  transition: opacity var(--time), visibility var(--time);
+  transition: opacity var(--time) var(--function-cubic),
+    visibility var(--time) var(--function-cubic);
 }
 
 .backdrop.is-hidden .modal {
@@ -830,7 +832,7 @@ body {
   top: 50%;
   left: 50%;
   transform: scale(1) translate(-50%, -50%) skew(180deg);
-  transition: transform var(--time);
+  transition: transform var(--time) var(--function-cubic);
 
   min-height: 581px;
   min-width: 528px;
